@@ -1,39 +1,33 @@
 <?php
 
-namespace App\Http\Controllers\Api\V1\Categories;
+namespace App\Http\Controllers\Api\V1\Roles;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class CategoryController extends Controller
+class RolesController extends Controller
 {
     public function index(){
         return response()->json([
-            "message" => 'Category List'
-        ]);
-    }
-
-    public function create(){
-        return response()->json([
-            "message" => 'Category Create'
+            'message' => 'Roles List'
         ]);
     }
 
     public function show(){
         return response()->json([
-            "message" => 'Category Show'
+            'message' => 'Roles show'
         ]);
     }
 
     public function update(){
         return response()->json([
-            "message" => 'Category Update'
+            'message' => 'Roles update'
         ]);
     }
 
     public function delete(){
         return response()->json([
-            "message" => 'Category Delete'
+           'message' => 'Roles delete'
         ]);
     }
 }

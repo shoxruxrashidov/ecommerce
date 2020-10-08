@@ -1,39 +1,33 @@
 <?php
 
-namespace App\Http\Controllers\Api\V1\Categories;
+namespace App\Http\Controllers\Api\V1\Permissions;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class CategoryController extends Controller
+class PermissionsController extends Controller
 {
     public function index(){
         return response()->json([
-            "message" => 'Category List'
-        ]);
-    }
-
-    public function create(){
-        return response()->json([
-            "message" => 'Category Create'
+           'message' => 'Permissions list'
         ]);
     }
 
     public function show(){
         return response()->json([
-            "message" => 'Category Show'
+            'message' => 'Permissions show'
         ]);
     }
 
     public function update(){
         return response()->json([
-            "message" => 'Category Update'
+           'message' => 'Permissions Update'
         ]);
     }
 
     public function delete(){
         return response()->json([
-            "message" => 'Category Delete'
+           'message' => 'Permissions delete'
         ]);
     }
 }

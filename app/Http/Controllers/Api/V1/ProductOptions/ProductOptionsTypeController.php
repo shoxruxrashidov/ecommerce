@@ -9,13 +9,13 @@ class ProductOptionsTypeController extends Controller
 {
     public function index(){
         return response()->json([
-            'message' => 'Product Options Type List'
+            'message' => 'Products Options Type List'
         ]);
     }
 
     public function filter(){
         return response()->json([
-            'message' => 'Product options type filter'
+            'message' => 'Products options type filter'
         ]);
     }
 }

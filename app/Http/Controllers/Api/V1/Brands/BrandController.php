@@ -10,7 +10,7 @@ class BrandController extends Controller
     public function index()
     {
         return response()->json([
-            'message' => 'Brands List'
+            'message' => 'Brand List'
         ]);
     }
 
