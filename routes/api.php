@@ -88,8 +88,21 @@ Route::group(['prefix' => 'v1', 'namespace' => 'API\V1'], function () {
 
     });
 
+    /*Marketplace*/
+    Route::group(['prefix' => 'marketplace', 'namespace' => 'Marketplace'], function () {
+        Route::post('trendyol/push', 'Trendyol\TrendyolController@push')->name('marketplace.trendyol.push');
+        Route::post('n11/push', 'N11\N11Controller@push')->name('marketplace.n11.push');
+
+    });
+
+    /*Order*/
+    Route::group(['prefix' => 'order', 'namespace' => 'Orders'], function () {
+        Route::post('profile', 'OrderController@list')->name('order.list');
+
+    });
+
     /*Settings*/
-    Route::group(['prefix' => 'settings', 'namespace' => 'Settings'], function () {
+    Route::group(['prefix' => 'settings', 'namespace' => 'Profile'], function () {
         Route::post('profile', 'SettingsController@profile')->name('settings.profile');
 
     });
